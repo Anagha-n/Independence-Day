@@ -1,0 +1,150 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap");
+
+body {
+  font-family: "Dancing Script", cursive;
+  background-image: url("https://ak.picdn.net/shutterstock/videos/29483902/thumb/1.jpg");
+  background-repeat: no-repeat;
+  background-size: 200% 200%;
+  backdrop-filter: blur(8px);
+  height: 100vh;
+  width: 100%;
+}
+
+h1 {
+  text-align: center;
+}
+
+/* #projects {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 2em;
+} */
+
+/* h2 {
+  grid-column: 1 / span 4;
+} */
+
+.nav ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style: none;
+  padding: 2%;
+  background-color: skyblue;
+}
+
+.nav ul li {
+  margin: 0 20px;
+}
+
+h1 {
+  font-size: 500%;
+}
+
+h2 {
+  font-size: 250%;
+  text-align: center;
+}
+
+p {
+  font-size: 140%;
+  text-align: center;
+}
+
+#projects {
+  background: linear-gradient(orange, white, green);
+  padding: 2%;
+  margin: 10%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+img:hover {
+  cursor: pointer;
+}
+
+#ff-image {
+  display: inline;
+  height: 200px;
+  width: 200px;
+}
+
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: 0.5s ease;
+  backface-visibility: hidden;
+}
+
+.middle {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-20%, 50%);
+  -ms-transform: translate(-20%, -50%);
+  text-align: center;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.text {
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  padding: 16px 32px;
+}
+
+marquee {
+  font-size: 140%;
+}
+
+#i {
+  margin-left: 70px;
+}
+
+#n {
+  margin-left: 40px;
+}
+
+#s {
+  margin-left: 60px;
+}
+
+#picture {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+#h {
+  padding: 2%;
+  margin: 10% 10% 0 10%;
+  text-align: center;
+  border-radius: 10px;
+}
+
+h3 {
+  color: yellow;
+}
+
+a {
+  color: purple;
+  font-size: 120%;
+}
+
+@media screen and (max-width: 800px) {
+  .column {
+    flex: 50%;
+    max-width: 50%;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+}
